@@ -1,0 +1,144 @@
+.quadrado_menususpenso {
+    width: auto;
+    height: 50px;
+    background: #e9e9e9;
+  }
+
+.quadrado_menu {
+    width: auto;
+    height: 70px;
+    background: #3cd2d3;
+  }
+
+  .quadrado_divisao {
+    width: auto;
+    height: 50px;
+    background: #3cd2d3;
+    margin-top: -20px
+  }
+
+  .Imagem_topo{
+    margin: 0;
+  }
+
+  .img_rodape {
+    width: 290px;
+    left:58ch;
+    position: sticky;
+    cursor: pointer;
+    border: 2px;
+  }
+
+  .imglogo{
+    width: 100%;
+    display: flex;
+    float: none;
+    margin-left: 25px;
+   height: inherit;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3cd2d3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+  }
+  
+  .button:hover {background-color: #021003}
+  
+  .button:active {
+    background-color: #080b08;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .button2 {
+    left: 870px;
+    right: 300px;
+    width: 100px;
+    position: sticky;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #0c0b0b;
+    background-color: #f4f7f7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999; 
+  }
+
+  .button3 {
+    left: 990px;
+    right: 200px;
+    width: 200px;
+    position: sticky;
+     display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #0c0b0b;
+    background-color: #f4f7f7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  /* Adicione estilos para os elementos do formulário */
+  label {
+    font-size: 18px;
+    margin-top: 10px;
+  } 
+
+  input {
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px; /* Adicione bordas arredondadas */
+  }
+
+ .botao_entar{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #159be9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+ }
+
+ .cadastro{
+    text-align: center;
+    /* define a largura do formulário */
+    width: 500px;
+    /* define as margens esquerda e direita como automáticas */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 10px;
+
+ }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Cadastrar_curriculo.css"/>
+    
+    <script src="/Conexao/cadastraruser.js" defer ></script>
+    <!-- <script type="text/javascript" src="/Conexao/script.js"></script>  -->
+
+    <title>Cadastrar_curriculo</title>
+</head>
+
+<div class="quadrado_menususpenso">
+    <a href='/public/S_Candidato.html'><button class="button">Candidato</button></a>
+    <a href='/public/S_Empresa.html'><button class="button">Empresa</button></a>
+    <a href='/public/Sobre.html'><button class="button">Sobre</button></a>
+</div>
+
+<div class="quadrado_menu">
+    <br>
+    <a href='/public/Home.html'><button class="button2">Home</button></a>
+    <button class="button3">Cadastre Seu Curriculo</button>
+</div>
+
+<form class="cadastro">
+    <p>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" class = "nome" name="nome" required minlength="3">
+    </p>
+    <p>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" class="email" name="email" required>
+    </p>
+    <p>
+      <label for="telefone">Telefone:</label>
+      <!-- aceita somente números no formato (xx) xxxx-xxxx -->
+      <input type="tel" id="telefone" class="telefone" name="telefone">
+    </p>
+    <p>
+      <label for="senha">Senha:</label>
+      <!-- aceita somente letras e números com no mínimo 6 caracteres -->
+      <input type="password" id="senha" class="senha" name="senha" required pattern="[A-Za-z0-9]{6,}">
+    </p>
+    <p>
+      <label for="confirma">Confirme a senha:</label>
+      <!-- deve ser igual ao valor da senha -->
+      <input type="password" id="confirma" class="senha" name="confirma" required pattern="[A-Za-z0-9]{6,}">
+    </p>
+    <p>
+      <label for="cargo">Cargo desejado:</label>
+      <input type="text" id="cargo" class="cargo" name="cargo">
+    </p>
+    <p>
+      <label for="salario">Pretenção salarial:</label>
+      <!-- aceita somente números entre 1000 e 10000 -->
+      <input type="number" id="salario" class="salario" name="salario" min="1000" max="10000">
+    </p>
+
+    <p>
+      <label for="cpf">CPF :</label>
+      <!-- aceita somente números entre 1000 e 10000 -->
+      <input type="number" id="cpf" class="cpf" name="cpf">
+    </p>
+
+    <p>
+      <label for="estado">Estado:</label>
+      <!-- lista de estados do Brasil -->
+       <select id="estado" class="estado" name="estado">
+        <option value="">Selecione</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option> 
+        <option value="TO">Tocantins </option >
+       </select >
+     </p >
+     <!-- botão para enviar o formulário -->
+     <form>
+        <!-- campos do formulário -->
+        <p>
+          <!-- botão de envio do formulário -->
+
+          <input class="button" href="/public/Area_Candidato.html" type="submit" value="Enviar dados">
+        </p>
+      </form>
+      <!-- <a href='/public/Area_Candidato.html'><button class="button2">Enviar dados(teste)</button></a> -->
+<br>
+<br>
+<div class="quadrado_divisao"></div>
+
+<div class="Imagem_centro">
+    <img src="/assets/rodape-1-3aD.png" style="width:100%">
+</div>
+<!-- rodape -->
+<br>
+  <footer style="background-color: #3cd2d3;" style="box-shadow: 0px 0px 10px grey;">
+    <div style="text-align:center;">
+      <img src="/assets/logo-png-2.png" alt="Imagem do rodapé" style="width: 350px; height: 100px;">
+    </div>
+  </footer>
+<!-- Fim rodape -->
+
+</body>
+</html>

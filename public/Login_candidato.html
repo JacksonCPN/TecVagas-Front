@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Login_candidato.css"/>
+    <title>Login Candidato</title>
+</head>
+
+<div class="quadrado_menususpenso">
+    <a href='/public/S_Candidato.html'><button class="button">Candidato</button></a>
+    <a href='/public/S_Empresa.html'><button class="button">Empresa</button></a>
+    <a href='/public/Sobre.html'><button class="button">Sobre</button></a>
+</div>
+
+<div class="quadrado_menu">
+    <br>
+    <a href='/public/Login.html'><button class="button2">Voltar</button></a>
+    <button class="button3">Cadastre Seu Curriculo</button>
+</div>
+<br>
+<br>
+<br>
+<h2></h2>
+<form onsubmit="return validateForm()">
+  <h3>Usuario</h3>
+  <input type="text" class="username" id="username" name="username"><br>
+  <h3>Senha</h3>
+  <label for="password"></label><br>
+  <input type="password" class="pass" id="password" name="password"><br><br>
+  <button class="botao_entar" type="submit">Entrar</button>
+</form> 
+
+<center>
+  <p>Entrar como <a style="width: 500px;" href="/public/Login_empresa.html">Empresa</a> Criar <a href="#">Conta Usuário</a> <br><a href="/public/Recuperar_conta_candidato.html">Recuperar Conta</a> </p>
+</center>
+
+<div class="Img_dir">
+
+  <img src="/assets/funcionarios-1-eMs.png" alt="Imagem fundo" style="opacity: 0.5; z-index: -1; top: 130px; height: 379px; position: absolute; right: 0;">
+</div>
+
+<img src="/assets/logo-png-1-5Fj.png" alt="Imagem ao lado dos botões" style="z-index: -1; left: 90px; top: 160px; height: 180px; position: absolute; right: 0;">
+
+<script>
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username == "" || password == "") {
+      alert("Nome de usuário e senha são obrigatórios.");
+      return false;
+    }
+    return true;
+  }
+</script>
+
+<!-- rodape -->
+<br>
+  <footer style="background-color: #3cd2d3;" style= " box-shadow: 0px 0px 10px grey;">
+    <div style="text-align:center;">
+      <img src="/assets/logo-png-2.png" alt="Imagem do rodapé" style="width: 350px; height: 100px;">
+    </div>
+  </footer>
+<!-- Fim rodape -->
+</body>
+</html>
