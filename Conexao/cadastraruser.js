@@ -11,10 +11,6 @@ const iestado = document.querySelector(".estado");
 const icpf = document.querySelector(".cpf");
 
 
-
-console.log(isalario);
-
-
 function cadastrar() {
 
     fetch('http://localhost:8080/candidato',
@@ -66,21 +62,3 @@ cadastro.addEventListener('submit', function (event){
 
 
 });
-
-
-
-
-
-
-
-// saida de variaveis para o console
-// cadastro.addEventListener('submit', function (event){
-//     event.preventDefault();
-//     console.log(inome.value);
-//     console.log(iemail.value);
-//     console.log(itelefone.value);
-//     console.log(isenha.value);
-//     console.log(icargo.value);
-//     console.log(isalario.value);
-//     console.log(iestado.value);
-// });
